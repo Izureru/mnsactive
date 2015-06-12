@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OAuthSwift
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
@@ -25,6 +26,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     btn.setTitle("Add new Dummy", forState: UIControlState.Normal)
     btn.addTarget(self, action: "addDummyData", forControlEvents: UIControlEvents.TouchUpInside)
     self.view.addSubview(btn)
+    
+    // OAuth1.0
+    let oauthswift = OAuth1Swift(
+      consumerKey:    "********",
+      consumerSecret: "********",
+      requestTokenUrl: "https://api.twitter.com/oauth/request_token",
+      authorizeUrl:    "https://api.twitter.com/oauth/authorize",
+      accessTokenUrl:  "https://api.twitter.com/oauth/access_token"
+    )
+    oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/twitter")!, success: {
+      credential, response in
+      println(credential.oauth_token)
+      println(credential.oauth_token_secret)
+      }, failure: failureHandler)
+  }
+  
+  func failureHandler(error: NSError){
+    println("kjnnhnhjjn \(error)")
   }
   
   func addDummyData() {

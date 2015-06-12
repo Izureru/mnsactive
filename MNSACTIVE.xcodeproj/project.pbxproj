@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8971F1DCCED42F1C54C7BF64 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA20AE7D69B66658988C3166 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		9450B8C31B2B49F10043945A /* FitbitOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450B8C21B2B49F10043945A /* FitbitOAuth.swift */; };
-		9450B8C41B2B49F10043945A /* FitbitOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450B8C21B2B49F10043945A /* FitbitOAuth.swift */; };
 		9480DBD11B2B2CB100FE975A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480DBD01B2B2CB100FE975A /* AppDelegate.swift */; };
 		9480DBD31B2B2CB100FE975A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480DBD21B2B2CB100FE975A /* ViewController.swift */; };
 		9480DBD61B2B2CB100FE975A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9480DBD41B2B2CB100FE975A /* Main.storyboard */; };
@@ -35,7 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9450B8C21B2B49F10043945A /* FitbitOAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitbitOAuth.swift; sourceTree = "<group>"; };
+		66B6440355E7AC3D202BFB67 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7B03EF72AE4A3F98C2110420 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9480DBCB1B2B2CB100FE975A /* MNSACTIVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNSACTIVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9480DBCF1B2B2CB100FE975A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9480DBD01B2B2CB100FE975A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +47,7 @@
 		9480DBE61B2B2CB100FE975A /* MNSACTIVETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNSACTIVETests.swift; sourceTree = "<group>"; };
 		9480DBF01B2B2CDA00FE975A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9480DBF31B2B2D0C00FE975A /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
-		9480DBF91B2B380500FE975A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9480DBF91B2B380500FE975A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EA20AE7D69B66658988C3166 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +78,7 @@
 				9480DBCC1B2B2CB100FE975A /* Products */,
 				9480DBF91B2B380500FE975A /* Podfile */,
 				E7B9AFD0836B56C6CB2C87D9 /* Frameworks */,
+				BAAEC0D2809D0E8DF5F77332 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +110,6 @@
 			children = (
 				9480DBF01B2B2CDA00FE975A /* SwiftyJSON.swift */,
 				9480DBCF1B2B2CB100FE975A /* Info.plist */,
-				9450B8C21B2B49F10043945A /* FitbitOAuth.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +129,15 @@
 				9480DBE51B2B2CB100FE975A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAAEC0D2809D0E8DF5F77332 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B03EF72AE4A3F98C2110420 /* Pods.debug.xcconfig */,
+				66B6440355E7AC3D202BFB67 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E7B9AFD0836B56C6CB2C87D9 /* Frameworks */ = {
@@ -296,7 +304,6 @@
 				9480DBF11B2B2CDA00FE975A /* SwiftyJSON.swift in Sources */,
 				9480DBD31B2B2CB100FE975A /* ViewController.swift in Sources */,
 				9480DBF41B2B2D0C00FE975A /* RestApiManager.swift in Sources */,
-				9450B8C31B2B49F10043945A /* FitbitOAuth.swift in Sources */,
 				9480DBD11B2B2CB100FE975A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +315,6 @@
 				9480DBE71B2B2CB100FE975A /* MNSACTIVETests.swift in Sources */,
 				9480DBF21B2B2CDA00FE975A /* SwiftyJSON.swift in Sources */,
 				9480DBF51B2B2D0C00FE975A /* RestApiManager.swift in Sources */,
-				9450B8C41B2B49F10043945A /* FitbitOAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +431,7 @@
 		};
 		9480DBEB1B2B2CB100FE975A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B03EF72AE4A3F98C2110420 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MNSACTIVE/Info.plist;
@@ -435,6 +442,7 @@
 		};
 		9480DBEC1B2B2CB100FE975A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B6440355E7AC3D202BFB67 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MNSACTIVE/Info.plist;
