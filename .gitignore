@@ -1,0 +1,13 @@
+
+*.xcuserstate
+*.xcbkptlist
+MNSACTIVE.xcodeproj/xcuserdata
+MNSACTIVE.xcworkspace/xcshareddata/MNSACTIVE.xccheckout
+MNSACTIVE.xcodeproj/project.xcworkspace/xcshareddata/MNSACTIVE.xccheckout
+MNSACTIVE.xcworkspace/xcuserdata
+Build
+xcuserdata
+MNSACTIVE/Pods/Pods.xcodeproj/xcshareddata
+*.orig
+*.DS_Store
+

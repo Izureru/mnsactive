@@ -1,7 +1,0 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.49.6 clang-602.0.49)"
-options: "c1e3536f53c48ade5e44f414ec095b42"
-inputs: 
-- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVE/SwiftyJSON.swift"
-- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVE/ViewController.swift"
-- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVE/RestApiManager.swift"
-- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVE/AppDelegate.swift"
