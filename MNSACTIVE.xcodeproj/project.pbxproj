@@ -20,6 +20,26 @@
 		9480DBF51B2B2D0C00FE975A /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480DBF31B2B2D0C00FE975A /* RestApiManager.swift */; };
 		9480DBFA1B2B380500FE975A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9480DBF91B2B380500FE975A /* Podfile */; };
 		9480DBFB1B2B380500FE975A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9480DBF91B2B380500FE975A /* Podfile */; };
+		94E021321B2B56E300CC9DF8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0211F1B2B56E300CC9DF8 /* NSData+Base64.m */; };
+		94E021331B2B56E300CC9DF8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0211F1B2B56E300CC9DF8 /* NSData+Base64.m */; };
+		94E021341B2B56E300CC9DF8 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021211B2B56E300CC9DF8 /* NSString+Base64.m */; };
+		94E021351B2B56E300CC9DF8 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021211B2B56E300CC9DF8 /* NSString+Base64.m */; };
+		94E021361B2B56E300CC9DF8 /* TMBChoreography.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021231B2B56E300CC9DF8 /* TMBChoreography.m */; };
+		94E021371B2B56E300CC9DF8 /* TMBChoreography.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021231B2B56E300CC9DF8 /* TMBChoreography.m */; };
+		94E021381B2B56E300CC9DF8 /* TMBChoreographyExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021261B2B56E300CC9DF8 /* TMBChoreographyExecution.m */; };
+		94E021391B2B56E300CC9DF8 /* TMBChoreographyExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021261B2B56E300CC9DF8 /* TMBChoreographyExecution.m */; };
+		94E0213A1B2B56E300CC9DF8 /* TMBException.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021281B2B56E300CC9DF8 /* TMBException.m */; };
+		94E0213B1B2B56E300CC9DF8 /* TMBException.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021281B2B56E300CC9DF8 /* TMBException.m */; };
+		94E0213C1B2B56E300CC9DF8 /* TMBTembooResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0212A1B2B56E300CC9DF8 /* TMBTembooResource.m */; };
+		94E0213D1B2B56E300CC9DF8 /* TMBTembooResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0212A1B2B56E300CC9DF8 /* TMBTembooResource.m */; };
+		94E0213E1B2B56E300CC9DF8 /* TMBTembooSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0212D1B2B56E300CC9DF8 /* TMBTembooSession.m */; };
+		94E0213F1B2B56E300CC9DF8 /* TMBTembooSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0212D1B2B56E300CC9DF8 /* TMBTembooSession.m */; };
+		94E021401B2B56E300CC9DF8 /* TMBTembooUri.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0212F1B2B56E300CC9DF8 /* TMBTembooUri.m */; };
+		94E021411B2B56E300CC9DF8 /* TMBTembooUri.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E0212F1B2B56E300CC9DF8 /* TMBTembooUri.m */; };
+		94E021421B2B56E300CC9DF8 /* TMBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021311B2B56E300CC9DF8 /* TMBUtil.m */; };
+		94E021431B2B56E300CC9DF8 /* TMBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021311B2B56E300CC9DF8 /* TMBUtil.m */; };
+		94E021471B2B58C900CC9DF8 /* TMBFitbit.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021461B2B58C900CC9DF8 /* TMBFitbit.m */; };
+		94E021481B2B58C900CC9DF8 /* TMBFitbit.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E021461B2B58C900CC9DF8 /* TMBFitbit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +68,29 @@
 		9480DBF01B2B2CDA00FE975A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9480DBF31B2B2D0C00FE975A /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		9480DBF91B2B380500FE975A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		94E0211E1B2B56E300CC9DF8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		94E0211F1B2B56E300CC9DF8 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		94E021201B2B56E300CC9DF8 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		94E021211B2B56E300CC9DF8 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		94E021221B2B56E300CC9DF8 /* TMBChoreography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBChoreography.h; sourceTree = "<group>"; };
+		94E021231B2B56E300CC9DF8 /* TMBChoreography.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBChoreography.m; sourceTree = "<group>"; };
+		94E021241B2B56E300CC9DF8 /* TMBChoreography_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBChoreography_Protected.h; sourceTree = "<group>"; };
+		94E021251B2B56E300CC9DF8 /* TMBChoreographyExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBChoreographyExecution.h; sourceTree = "<group>"; };
+		94E021261B2B56E300CC9DF8 /* TMBChoreographyExecution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBChoreographyExecution.m; sourceTree = "<group>"; };
+		94E021271B2B56E300CC9DF8 /* TMBException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBException.h; sourceTree = "<group>"; };
+		94E021281B2B56E300CC9DF8 /* TMBException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBException.m; sourceTree = "<group>"; };
+		94E021291B2B56E300CC9DF8 /* TMBTembooResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBTembooResource.h; sourceTree = "<group>"; };
+		94E0212A1B2B56E300CC9DF8 /* TMBTembooResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBTembooResource.m; sourceTree = "<group>"; };
+		94E0212B1B2B56E300CC9DF8 /* TMBTembooResource_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBTembooResource_Protected.h; sourceTree = "<group>"; };
+		94E0212C1B2B56E300CC9DF8 /* TMBTembooSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBTembooSession.h; sourceTree = "<group>"; };
+		94E0212D1B2B56E300CC9DF8 /* TMBTembooSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBTembooSession.m; sourceTree = "<group>"; };
+		94E0212E1B2B56E300CC9DF8 /* TMBTembooUri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBTembooUri.h; sourceTree = "<group>"; };
+		94E0212F1B2B56E300CC9DF8 /* TMBTembooUri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBTembooUri.m; sourceTree = "<group>"; };
+		94E021301B2B56E300CC9DF8 /* TMBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBUtil.h; sourceTree = "<group>"; };
+		94E021311B2B56E300CC9DF8 /* TMBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBUtil.m; sourceTree = "<group>"; };
+		94E021441B2B581000CC9DF8 /* MNSACTIVE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MNSACTIVE-Bridging-Header.h"; sourceTree = "<group>"; };
+		94E021451B2B58C900CC9DF8 /* TMBFitbit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBFitbit.h; sourceTree = "<group>"; };
+		94E021461B2B58C900CC9DF8 /* TMBFitbit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBFitbit.m; sourceTree = "<group>"; };
 		EA20AE7D69B66658988C3166 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9480DBCD1B2B2CB100FE975A /* MNSACTIVE */,
+				94E0211B1B2B567E00CC9DF8 /* Temboo */,
 				9480DBE31B2B2CB100FE975A /* MNSACTIVETests */,
 				9480DBCC1B2B2CB100FE975A /* Products */,
 				9480DBF91B2B380500FE975A /* Podfile */,
@@ -110,6 +154,7 @@
 			children = (
 				9480DBF01B2B2CDA00FE975A /* SwiftyJSON.swift */,
 				9480DBCF1B2B2CB100FE975A /* Info.plist */,
+				94E021441B2B581000CC9DF8 /* MNSACTIVE-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,6 +174,52 @@
 				9480DBE51B2B2CB100FE975A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94E0211B1B2B567E00CC9DF8 /* Temboo */ = {
+			isa = PBXGroup;
+			children = (
+				94E0211C1B2B56E300CC9DF8 /* core */,
+			);
+			name = Temboo;
+			sourceTree = "<group>";
+		};
+		94E0211C1B2B56E300CC9DF8 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				94E0211D1B2B56E300CC9DF8 /* lib */,
+				94E021221B2B56E300CC9DF8 /* TMBChoreography.h */,
+				94E021231B2B56E300CC9DF8 /* TMBChoreography.m */,
+				94E021241B2B56E300CC9DF8 /* TMBChoreography_Protected.h */,
+				94E021251B2B56E300CC9DF8 /* TMBChoreographyExecution.h */,
+				94E021261B2B56E300CC9DF8 /* TMBChoreographyExecution.m */,
+				94E021451B2B58C900CC9DF8 /* TMBFitbit.h */,
+				94E021461B2B58C900CC9DF8 /* TMBFitbit.m */,
+				94E021271B2B56E300CC9DF8 /* TMBException.h */,
+				94E021281B2B56E300CC9DF8 /* TMBException.m */,
+				94E021291B2B56E300CC9DF8 /* TMBTembooResource.h */,
+				94E0212A1B2B56E300CC9DF8 /* TMBTembooResource.m */,
+				94E0212B1B2B56E300CC9DF8 /* TMBTembooResource_Protected.h */,
+				94E0212C1B2B56E300CC9DF8 /* TMBTembooSession.h */,
+				94E0212D1B2B56E300CC9DF8 /* TMBTembooSession.m */,
+				94E0212E1B2B56E300CC9DF8 /* TMBTembooUri.h */,
+				94E0212F1B2B56E300CC9DF8 /* TMBTembooUri.m */,
+				94E021301B2B56E300CC9DF8 /* TMBUtil.h */,
+				94E021311B2B56E300CC9DF8 /* TMBUtil.m */,
+			);
+			name = core;
+			path = ../../../Downloads/temboo_ios_sdk_2.11.0/src/core;
+			sourceTree = "<group>";
+		};
+		94E0211D1B2B56E300CC9DF8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				94E0211E1B2B56E300CC9DF8 /* NSData+Base64.h */,
+				94E0211F1B2B56E300CC9DF8 /* NSData+Base64.m */,
+				94E021201B2B56E300CC9DF8 /* NSString+Base64.h */,
+				94E021211B2B56E300CC9DF8 /* NSString+Base64.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		A6AD232F3D2E3BBF95E6BDDD /* Pods */ = {
@@ -301,10 +392,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E021341B2B56E300CC9DF8 /* NSString+Base64.m in Sources */,
+				94E021471B2B58C900CC9DF8 /* TMBFitbit.m in Sources */,
 				9480DBF11B2B2CDA00FE975A /* SwiftyJSON.swift in Sources */,
+				94E021401B2B56E300CC9DF8 /* TMBTembooUri.m in Sources */,
 				9480DBD31B2B2CB100FE975A /* ViewController.swift in Sources */,
+				94E021321B2B56E300CC9DF8 /* NSData+Base64.m in Sources */,
+				94E021361B2B56E300CC9DF8 /* TMBChoreography.m in Sources */,
+				94E0213A1B2B56E300CC9DF8 /* TMBException.m in Sources */,
+				94E021421B2B56E300CC9DF8 /* TMBUtil.m in Sources */,
 				9480DBF41B2B2D0C00FE975A /* RestApiManager.swift in Sources */,
+				94E0213C1B2B56E300CC9DF8 /* TMBTembooResource.m in Sources */,
+				94E0213E1B2B56E300CC9DF8 /* TMBTembooSession.m in Sources */,
 				9480DBD11B2B2CB100FE975A /* AppDelegate.swift in Sources */,
+				94E021381B2B56E300CC9DF8 /* TMBChoreographyExecution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +413,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E021411B2B56E300CC9DF8 /* TMBTembooUri.m in Sources */,
+				94E021431B2B56E300CC9DF8 /* TMBUtil.m in Sources */,
+				94E0213F1B2B56E300CC9DF8 /* TMBTembooSession.m in Sources */,
 				9480DBE71B2B2CB100FE975A /* MNSACTIVETests.swift in Sources */,
+				94E021331B2B56E300CC9DF8 /* NSData+Base64.m in Sources */,
+				94E0213D1B2B56E300CC9DF8 /* TMBTembooResource.m in Sources */,
+				94E021371B2B56E300CC9DF8 /* TMBChoreography.m in Sources */,
+				94E0213B1B2B56E300CC9DF8 /* TMBException.m in Sources */,
 				9480DBF21B2B2CDA00FE975A /* SwiftyJSON.swift in Sources */,
+				94E021391B2B56E300CC9DF8 /* TMBChoreographyExecution.m in Sources */,
+				94E021481B2B58C900CC9DF8 /* TMBFitbit.m in Sources */,
 				9480DBF51B2B2D0C00FE975A /* RestApiManager.swift in Sources */,
+				94E021351B2B56E300CC9DF8 /* NSString+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
