@@ -1,0 +1,6 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.49.6 clang-602.0.49)"
+options: "a73d42d6be9b414c22610265f4674b8e"
+inputs: 
+- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVETests/MNSACTIVETests.swift"
+- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVE/SwiftyJSON.swift"
+- "/Users/Izureru/dev/RW/MNSACTIVE/MNSACTIVE/RestApiManager.swift"

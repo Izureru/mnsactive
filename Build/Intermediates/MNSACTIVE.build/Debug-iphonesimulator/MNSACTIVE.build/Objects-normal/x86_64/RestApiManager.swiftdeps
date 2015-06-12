@@ -1,0 +1,43 @@
+### Swift dependencies file v0 ###
+provides:
+- "ServiceResponse"
+- "RestApiManager"
+nominals:
+- "C9MNSACTIVE14RestApiManager"
+class-members:
+- "sharedInstance"
+- "baseURL"
+top-level:
+- "Void"
+- "NSObject"
+- "StringLiteralType"
+- "ServiceResponse"
+- !private "NSURLSession"
+- !private "NSMutableURLRequest"
+- !private "NSURL"
+- "String"
+- "RestApiManager"
+- "JSON"
+- "NSError"
+member-access:
+- "C9MNSACTIVE14RestApiManager"
+- !private "CSo12NSURLRequest"
+- !private "CSo20NSURLSessionDataTask"
+- !private "CSo5NSURL"
+- !private "CSo16NSURLSessionTask"
+- "PSs9AnyObject"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- !private "CSo12NSURLSession"
+- !private "V9MNSACTIVE4JSON"
+dynamic-lookup:
+cross-module:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"
