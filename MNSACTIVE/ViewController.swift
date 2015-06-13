@@ -29,13 +29,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // OAuth1.0
     let oauthswift = OAuth1Swift(
-      consumerKey:    "********",
-      consumerSecret: "********",
-      requestTokenUrl: "https://api.twitter.com/oauth/request_token",
-      authorizeUrl:    "https://api.twitter.com/oauth/authorize",
-      accessTokenUrl:  "https://api.twitter.com/oauth/access_token"
+      consumerKey:    "1ff195784e64fba8bd4b721de69e1fc6",
+      consumerSecret: "bd08bade4be43408bb6aa08ee5d644f6",
+      requestTokenUrl: "https://api.fitbit.com/oauth/request_token",
+      authorizeUrl:    "https://www.fitbit.com/oauth/authorize",
+      accessTokenUrl:  "https://api.fitbit.com/oauth2/token"
     )
-    oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/twitter")!, success: {
+    oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/fitbit")!, success: {
       credential, response in
       println(credential.oauth_token)
       println(credential.oauth_token_secret)
