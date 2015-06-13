@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     btn.setTitle("Add new Dummy", forState: UIControlState.Normal)
     btn.addTarget(self, action: "addDummyData", forControlEvents: UIControlEvents.TouchUpInside)
     self.view.addSubview(btn)
+    var authtk:String =  "xxxxxx"
+    var authtksct:String =  "zzzzz"
     
     // OAuth1.0
     let oauthswift = OAuth1Swift(
@@ -33,17 +35,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       consumerSecret: "bd08bade4be43408bb6aa08ee5d644f6",
       requestTokenUrl: "https://api.fitbit.com/oauth/request_token",
       authorizeUrl:    "https://www.fitbit.com/oauth/authorize",
-      accessTokenUrl:  "https://api.fitbit.com/oauth2/token"
+      accessTokenUrl:  "https://api.fitbit.com/oauth/access_token"
     )
+    
     oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/fitbit")!, success: {
       credential, response in
-//      println(credential.oauth_token)
-//      println(credential.oauth_token_secret)
+      println(credential.oauth_token)
+      authtk = credential.oauth_token
+      authtksct = credential.oauth_token_secret
+      println(credential.oauth_token_secret)
       }, failure: failureHandler)
   }
   
   func failureHandler(error: NSError){
     println("ERROR has occurred \(error)")
+  }
+  
+  func stepTwo(){
+    RestApiManager
   }
   
   func addDummyData() {
