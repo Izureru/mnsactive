@@ -37,13 +37,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     )
     oauthswift.authorizeWithCallbackURL( NSURL(string: "oauth-swift://oauth-callback/fitbit")!, success: {
       credential, response in
-      println(credential.oauth_token)
-      println(credential.oauth_token_secret)
+//      println(credential.oauth_token)
+//      println(credential.oauth_token_secret)
       }, failure: failureHandler)
   }
   
   func failureHandler(error: NSError){
-    println("kjnnhnhjjn \(error)")
+    println("ERROR has occurred \(error)")
   }
   
   func addDummyData() {
