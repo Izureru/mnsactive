@@ -51,16 +51,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     println("ERROR has occurred \(error)")
   }
   
-  func stepTwo(){
-    RestApiManager
-  }
-  
   func addDummyData() {
     RestApiManager.sharedInstance.getRandomUser { json in
-      let results = json["results"]
+      let results = json["user"]
+      
       for (index: String, subJson: JSON) in results {
-        let user: AnyObject = subJson["user"].object
-        self.items.addObject(user)
+        let attribute: AnyObject = json["user"].object
+        self.items.addObject(attribute)
+        println(attribute)
         dispatch_async(dispatch_get_main_queue(),{
           tableView?.reloadData()
         })
@@ -79,13 +77,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "CELL")
     }
     
-    let user:JSON =  JSON(self.items[indexPath.row])
+    let attribute:JSON =  JSON(self.items[indexPath.row])
     
-    let picURL = user["picture"]["medium"].string
+    let picURL = attribute["avatar"].string
+    println(picURL)
     let url = NSURL(string: picURL!)
     let data = NSData(contentsOfURL: url!)
     
-    cell!.textLabel?.text = user["username"].string
+    cell!.textLabel?.text = self.items[indexPath.row].string
     cell?.imageView?.image = UIImage(data: data!)
     
     return cell!

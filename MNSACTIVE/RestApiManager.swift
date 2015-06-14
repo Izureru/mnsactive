@@ -13,7 +13,8 @@ typealias ServiceResponse = (JSON, NSError?) -> Void
 class RestApiManager: NSObject {
   static let sharedInstance = RestApiManager()
   
-  let baseURL = "https://api.fitbit.com"
+//  let baseURL = "https://api.fitbit.com"
+  let baseURL = "http://private-25b0c4-schnap.apiary-mock.com/users"
   
   func getRandomUser(onCompletion: (JSON) -> Void) {
     let route = baseURL
