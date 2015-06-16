@@ -9,6 +9,9 @@
 import UIKit
 import OAuthSwift
 
+var authtk:String =  "xxxxxx"
+var authtksct:String =  "zzzzz"
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
   var tableView:UITableView?
@@ -26,8 +29,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     btn.setTitle("Add new Dummy", forState: UIControlState.Normal)
     btn.addTarget(self, action: "addDummyData", forControlEvents: UIControlEvents.TouchUpInside)
     self.view.addSubview(btn)
-    var authtk:String =  "xxxxxx"
-    var authtksct:String =  "zzzzz"
     
     // OAuth1.0
     let oauthswift = OAuth1Swift(
@@ -52,7 +53,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   }
   
   func addDummyData() {
-    RestApiManager.sharedInstance.getRandomUser { json in
+    RestApiManager.sharedInstance.getUser { json in
       let results = json["user"]
       
       for (index: String, subJson: JSON) in results {
@@ -84,7 +85,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let url = NSURL(string: picURL!)
     let data = NSData(contentsOfURL: url!)
     
-    cell!.textLabel?.text = self.items[indexPath.row].string
+    cell!.textLabel?.text = attribute["displayName"].string
     cell?.imageView?.image = UIImage(data: data!)
     
     return cell!
