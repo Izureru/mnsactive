@@ -1,65 +1,111 @@
 //
 //  ViewController.swift
-//  MNSACTIVE
+//  OAuthioSwiftExample
 //
-//  Created by Izureru on 12/06/2015.
-//  Copyright (c) 2015 Marks and Spencer. All rights reserved.
+//  Created by Antoine Jackson on 31/10/14.
+//  Copyright (c) 2014 OAuth.io. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, OAuthIODelegate {
+  @IBOutlet var login_button: UIButton!
+  @IBOutlet var request_button: UIButton!
+  @IBOutlet var logout_button: UIButton!
   
-  var tableView:UITableView?
-  var items = NSMutableArray()
+  @IBOutlet var name_label: UILabel!
+  @IBOutlet var status_label: UILabel!
   
-  override func viewWillAppear(animated: Bool) {
-    let frame:CGRect = CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.height-100)
-    self.tableView = UITableView(frame: frame)
-    self.tableView?.dataSource = self
-    self.tableView?.delegate = self
-    self.view.addSubview(self.tableView!)
-    
-    let btn = UIButton(frame: CGRect(x: 0, y: 25, width: self.view.frame.width, height: 50))
-    btn.backgroundColor = UIColor.cyanColor()
-    btn.setTitle("Add new Dummy", forState: UIControlState.Normal)
-    btn.addTarget(self, action: "addDummyData", forControlEvents: UIControlEvents.TouchUpInside)
-    self.view.addSubview(btn)
+  var oauth_modal: OAuthIOModal? = nil
+  var request_object: OAuthIORequest? = nil
+  var data = NSMutableData()
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+    self.oauth_modal = OAuthIOModal(key: "G8F0X65uWDu3ZX-zOU_10eK7Jug", delegate: self)
   }
   
-  func addDummyData() {
-    RestApiManager.sharedInstance.getRandomUser { json in
-      let results = json["results"]
-      for (index: String, subJson: JSON) in results {
-        let user: AnyObject = subJson["user"].object
-        self.items.addObject(user)
-        dispatch_async(dispatch_get_main_queue(),{
-          tableView?.reloadData()
-        })
+  
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  @IBAction func Click(sender: UIButton) {
+    if sender == self.login_button {
+      self.status_label.text = "Logging in with Fitbit"
+      var options = NSMutableDictionary()
+      options.setValue("true", forKey: "cache")
+      self.oauth_modal?.showWithProvider("fitbit", options: options as [NSObject : AnyObject])
+    }
+    if sender == self.request_button {
+      
+      self.request_object?.get("https://api.fitbit.com/1/user/-/badges.json", success: { (ResponseDictionary, Response, httpResponse) -> Void in
+        // convert json string to nsdictionary
+        println(Response)
+        
+        
+      })
+    } else {
+      self.status_label.text = "Not logged in"
+    }
+    
+    if sender == self.logout_button {
+      var cache_available = self.oauth_modal?.cacheAvailableForProvider("fitbit")
+      if cache_available! {
+        self.oauth_modal?.clearCache()
+        self.status_label.text = "Logged out"
+      } else {
+        self.status_label.text = "Not logged in"
       }
     }
   }
   
-  func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return self.items.count;
+  
+  func didReceiveOAuthIOResponse(request: OAuthIORequest!) {
+    var cred: NSDictionary = request.getCredentials()
+    println(cred.objectForKey("oauth_token"))
+    println(cred.objectForKey("oauth_token_secret"))
+    self.status_label.text = "Logged in with Twitter"
+    self.request_object = request
+    println(request)
   }
   
-  func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    var cell = tableView.dequeueReusableCellWithIdentifier("CELL") as? UITableViewCell
-    
-    if cell == nil {
-      cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "CELL")
-    }
-    
-    let user:JSON =  JSON(self.items[indexPath.row])
-    
-    let picURL = user["picture"]["medium"].string
-    let url = NSURL(string: picURL!)
-    let data = NSData(contentsOfURL: url!)
-    
-    cell!.textLabel?.text = user["username"].string
-    cell?.imageView?.image = UIImage(data: data!)
-    
-    return cell!
+  func didFailWithOAuthIOError(error: NSError!) {
+    self.status_label.text = "Could not login with twitter"
   }
+  
+  
+  func didFailAuthenticationServerSide(body: String!, andResponse response: NSURLResponse!, andError error: NSError!) {
+    
+  }
+  
+  func didAuthenticateServerSide(body: String!, andResponse response: NSURLResponse!) {
+    
+  }
+  
+  func didReceiveOAuthIOCode(code: String!) {
+    
+  }
+  // delegate methods for nsurl connection
+  func connection(didReceiveResponse: NSURLConnection!, didReceiveResponse response: NSURLResponse!) {
+    println("didReceiveResponse")
+  }
+  
+  func connection(connection: NSURLConnection, didFailWithError error: NSError) {
+    println(error.localizedDescription)
+  }
+  
+  func connection(connection: NSURLConnection!, didReceiveData conData: NSData!) {
+    self.data.appendData(conData)
+  }
+  
+  func connectionDidFinishLoading(connection: NSURLConnection!) {
+    println(self.data)
+  }
+  
+  
 }

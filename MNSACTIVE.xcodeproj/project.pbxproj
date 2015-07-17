@@ -47,7 +47,8 @@
 		9480DBE61B2B2CB100FE975A /* MNSACTIVETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNSACTIVETests.swift; sourceTree = "<group>"; };
 		9480DBF01B2B2CDA00FE975A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		9480DBF31B2B2D0C00FE975A /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
-		9480DBF91B2B380500FE975A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9480DBF91B2B380500FE975A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C4BBA71B590F0600E65197 /* MNSACTIVE-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MNSACTIVE-Bridging-Header.h"; path = "MNSACTIVE/MNSACTIVE-Bridging-Header.h"; sourceTree = "<group>"; };
 		EA20AE7D69B66658988C3166 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +74,7 @@
 		9480DBC21B2B2CB100FE975A = {
 			isa = PBXGroup;
 			children = (
+				94C4BBA71B590F0600E65197 /* MNSACTIVE-Bridging-Header.h */,
 				9480DBCD1B2B2CB100FE975A /* MNSACTIVE */,
 				9480DBE31B2B2CB100FE975A /* MNSACTIVETests */,
 				9480DBCC1B2B2CB100FE975A /* Products */,
@@ -437,6 +439,7 @@
 				INFOPLIST_FILE = MNSACTIVE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MNSACTIVE/MNSACTIVE-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -448,6 +451,7 @@
 				INFOPLIST_FILE = MNSACTIVE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MNSACTIVE/MNSACTIVE-Bridging-Header.h";
 			};
 			name = Release;
 		};
